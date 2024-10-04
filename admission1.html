@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>College Admission Form</title>
+   <style>
+    /* styles.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0082fb9a;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: rgba(100, 200, 200, 1); */
+    background-color: aquamarine;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(47, 0, 255, 1);
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* background-color: greenyellow; */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text" ],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    height: 40px; /* Adjust height to match other inputs */
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #00ff4c;
+}
+#s1>a{
+    text-decoration: none;
+    color: black;
+}
+   </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>College Admission Form</h1>
+        <form  action="admission.php" method="POST" id="submission">
+             
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+              
+             
+                <label for="ffull_name">Father's Name:</label>
+                <input type="text" id="ffull_name" name="ffull_name" required>
+              
+             
+                <label for="mfull_name">Mother's Name:</label>
+                <input type="text" id="mfull_name" name="mfull_name" required>
+              
+             
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+             
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+              
+             
+                <label for="pphone">Parent's Phone:</label>
+                <input type="tel" id="pphone" name="pphone" required>
+              
+             
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+              
+             
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+              
+             
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+              
+             
+                <label for="program">Program:</label>
+                <input type="text" id="program" name="program" required>
+              
+                <input type="submit" id="s1">
+        </form>
+    </div>  
+</body>
+
+</html>

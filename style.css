@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 1rem;
+}
+body{
+    margin: 0 10px 0 10px;
+    background-color: aquamarine;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    
+}
+#i1{
+    height: 120px;
+    width:80px;
+}
+.box{
+    align-content: center;
+    
+}
+.box>a{
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+}
+.box>a:hover{
+    background-color: rgb(59, 150, 230);
+}
+a{
+    text-decoration: none;
+    
+}
+#id7{
+    display: inline;
+}
+.carousel-item > img{
+    max-height: 700px;
+    max-width: 100%;
+}
+.cont{
+    display: flex;
+    max-height: 250px;
+    max-width: 100%;
+    justify-content: space-around;
+}
+.contact{
+    height: 250px;
+    width: 150px;
+    align-content: center;
+    font-size: small;
+    /* border: 2px solid black; */
+}
+.contact> span{
+    font-weight: 500;
+    font-size: 25px;
+    display: block;
+}
+
+#about{
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.course{
+    margin-top: 50px;
+}
+.course>span{
+    font-size: large;
+    font-weight: 500;
+    
+}
+
+.about1{
+    display: flex;
+    justify-content: space-between;
+}
+#about > h3{
+    text-decoration-line: underline;
+}
+.logo{
+    height:30px;
+    width:30px;
+    background-image: url(OIP.jpeg);
+    /* border: 2px solid black; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+.l2
+{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
